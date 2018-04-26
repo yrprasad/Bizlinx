@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg"
+    android:weightSum="15">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:minHeight="?attr/actionBarSize"
+        android:background="@android:color/transparent"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+    </android.support.v7.widget.Toolbar>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <RelativeLayout
+        android:layout_width="95dp"
+        android:layout_height="0dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="1"
+        android:background="@drawable/famlinx_logo" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <RelativeLayout
+        android:layout_width="133dp"
+        android:layout_height="0dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="9"
+        android:background="@drawable/user_bg">
+
+        <EditText
+            android:id="@+id/editText"
+            android:layout_width="wrap_content"
+            android:layout_height="15dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:background="@android:color/transparent"
+            android:drawableLeft="@drawable/username"
+            android:drawableTint="#cccccc" />
+
+        <View
+            android:id="@+id/view"
+            android:layout_toEndOf="@+id/editText"
+            android:layout_width="1dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_height="18dp"
+            android:background="#ffffff" />
+
+        <EditText
+            android:id="@+id/et_username"
+            android:layout_width="match_parent"
+            android:layout_height="15dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="5dp"
+            android:layout_toEndOf="@+id/view"
+            android:background="@android:color/transparent"
+            android:fontFamily="sans-serif"
+            android:hint="User Name"
+            android:inputType="textEmailAddress"
+            android:paddingLeft="10dp"
+            android:textColor="#ffffff"
+            android:textColorHint="#ffffff"
+            android:textSize="8sp"/>
+
+        <View
+            android:id="@+id/view1"
+            android:layout_width="fill_parent"
+            android:layout_below="@+id/editText"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_height="1dp"
+            android:background="#ffffff"/>
+
+        <EditText
+            android:id="@+id/editText3"
+            android:layout_width="wrap_content"
+            android:layout_height="15dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_alignTop="@+id/view1"
+            android:layout_toStartOf="@+id/view"
+            android:background="@android:color/transparent"
+            android:drawableLeft="@drawable/password"
+            android:drawableTint="#ffffff"/>
+
+        <View
+            android:id="@+id/view2"
+            android:layout_toEndOf="@+id/editText3"
+            android:layout_below="@+id/view1"
+            android:layout_width="1dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_height="18dp"
+            android:background="#ffffff" />
+
+        <EditText
+            android:id="@+id/et_password"
+            android:layout_width="match_parent"
+            android:layout_height="15dp"
+            android:layout_below="@+id/view1"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="5dp"
+            android:layout_toEndOf="@+id/view2"
+            android:background="@android:color/transparent"
+            android:fontFamily="sans-serif"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:paddingLeft="10dp"
+            android:textColor="#ffffff"
+            android:textColorHint="#ffffff"
+            android:textSize="8sp"/>
+
+        <Button
+            android:id="@+id/bt_login"
+            android:layout_width="130dp"
+            android:layout_height="25dp"
+            android:layout_below="@+id/view2"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:gravity="center_horizontal"
+            android:paddingBottom="8dp"
+            android:text="Login"
+            android:textSize="5sp"
+            android:onClick="OnLoginButtonClick"/>
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/view1"
+            android:layout_below="@+id/bt_login"
+            android:clickable="true"
+            android:text="Forgot Password?"
+            android:textColor="#ffffff"
+            android:textSize="6sp" />
+
+        <TextView
+            android:id="@+id/register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/view1"
+            android:layout_below="@+id/bt_login"
+            android:clickable="true"
+            android:text="Sign up"
+            android:textColor="#ffffff"
+            android:textSize="6sp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight=".5"/>
+
+    <RelativeLayout
+        android:layout_width="79dp"
+        android:layout_height="0dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="2"
+        android:background="@drawable/nglinx_logo" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight=".5"/>
+
+</LinearLayout>

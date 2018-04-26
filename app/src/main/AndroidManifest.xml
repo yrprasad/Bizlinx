@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.nglinx.pulse">
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.USE_CREDENTIALS"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"/>
+    <uses-permission android:name="com.example.android.pulse.permission.C2D_MESSAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.READ_CONTACTS"></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_CONTACTS"></uses-permission>
+
+    <permission
+        android:name="com.example.android.pulse.permission.MAPS_RECEIVE"
+        android:protectionLevel="signature"/>
+    <uses-permission android:name="com.example.android.pulse.permission.MAPS_RECEIVE"/>
+
+    <application
+        android:icon="@mipmap/app_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+        <activity android:name=".activity.SplashScreenActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.nglinx.pulse.activity.MainActivity">
+        </activity>
+        <activity
+            android:name="com.nglinx.pulse.activity.LoginActivity">
+        </activity>
+        <activity
+            android:name="com.nglinx.pulse.activity.SensorsActivity">
+        </activity>
+        <activity
+            android:name="com.nglinx.pulse.activity.NotificationsActivity">
+        </activity>
+        <activity
+            android:name="com.nglinx.pulse.activity.NotificationsDetailActivity">
+        </activity>
+
+        <!--<activity android:name=".mainClasses.RetroResponse"></activity>-->
+        <service android:name=".activity.AuthenticateIntentService"></service>
+
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="272d3302add740165de71b7671005b4d4f303653" />
+
+    </application>
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:resizeable="true"
+        android:smallScreens="true"
+        android:xlargeScreens="true"/>
+
+</manifest>

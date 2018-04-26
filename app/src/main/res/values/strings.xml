@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">BizLinx</string>
+    <string name="country_prompt">Fence</string>
+
+    <string-array name="country_arrays">
+        <item>Home Fence for kids</item>
+        <item>Park fence for kids</item>
+        <item>School fence for kids</item>
+        <item>Home fence for pet</item>
+    </string-array>
+
+</resources>

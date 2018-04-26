@@ -1,0 +1,61 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_notification_row"
+    style="@style/Crop.DoneCancelBar"
+    android:layout_width="match_parent"
+    android:layout_marginBottom="5dp"
+    android:layout_marginTop="5dp"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:weightSum="4"
+              android:descendantFocusability="blocksDescendants"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/l1"
+        android:layout_width="326dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:orientation="vertical"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp"
+        android:gravity="left"
+        android:layout_weight="1.17"
+        android:focusableInTouchMode="false"
+        android:clickable="false"
+        android:focusable="false">
+
+        <TextView
+            android:id="@+id/notif_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#edeeee"
+            android:ellipsize="end"
+            android:gravity="left"
+            android:maxLines="1"
+            android:text="Speed"
+            android:textColor="#FF383838"
+            android:textSize="12sp"
+            android:textStyle="normal|italic"
+            android:focusableInTouchMode="false"
+            android:clickable="false"
+            android:focusable="false"/>
+
+        <TextView
+            android:id="@+id/notif_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#edeeee"
+            android:gravity="left"
+            android:text="CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC"
+            android:textColor="#FF383838"
+            android:textSize="@dimen/places_heading2_size"
+            android:textStyle="bold"
+            android:inputType="textMultiLine"
+            android:fadeScrollbars="false"
+            android:focusableInTouchMode="false"
+            android:clickable="false"
+            android:focusable="false"/>
+    </LinearLayout>
+
+</LinearLayout>
